@@ -26,7 +26,7 @@ Apart from the few custom keybindings above, I also have what I also think is th
  - Do NOT use tab characters for indentation, uses spaces instead.
  - Turn off menu bar (not really necessary, but gives that clean and minimal look)
  - Turn off tool bar (as above)
- - Turn off deleting the marked region (probably not for newcomers)
+ - Turn off deleting the marked region with a keypress (probably not for newcomers). I like to cut it explicitly, or use M-x delete-region if I for some reason don't want to mess upp the kill ring.
  - Show matching parentheses/brackets
  - Do not delete files, move to trash instead (you have the disk space today to do this, I promise)
  - Turn off dired handling of drag and dropped files from outside Emacs.
