@@ -1,4 +1,10 @@
-dotemacs
+My .emacs files
 ========
 
-dotemacs
+This repository contains some .emacs / init.el variants that I like to use.
+
+barbones.el
+=========
+
+Bla bla
+
