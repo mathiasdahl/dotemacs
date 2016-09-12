@@ -38,3 +38,4 @@ Apart from the few custom keybindings above, I also have what I also think is th
  
 Well, that's it. Works for me 80% of the time. Of course, after using Emacs for a few days or so with this configuration I often start to add other small tweaks, tips and tricks to it. I often install Smex, for example, if I have a modern Emacs with a working M-x list-packages. If I'm using a lot of macros, I put record and playback commands on f7 and f8 (yes, I know, they are on f3 and f4 by default, but I started using Emacs before they were there, or before I knew about them...)
 
+If you want to try it out, just copy the content of barebones.el into your .emacs or init.el file (make a backup of your current files first) and restart Emacs.
