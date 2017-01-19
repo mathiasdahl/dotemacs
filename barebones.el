@@ -44,3 +44,12 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
+
+(require 'ibuffer)
+
+(defun ibuffer-stuff ()
+  (hl-line-mode 1)
+  (define-key ibuffer-mode-map (kbd "q") 'bury-buffer))
+
+(add-hook 'ibuffer-hook 'ibuffer-stuff)
+
