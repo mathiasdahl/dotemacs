@@ -28,7 +28,7 @@
                        (interactive)
                        (switch-to-buffer nil)))
 (global-set-key [f2] 'other-window)
-(global-set-key [f3] 'iswitchb-buffer)
+(global-set-key [f3] 'ibuffer)
 (global-set-key [f5] (lambda ()
                        (interactive)
                        (if (and (buffer-modified-p)
