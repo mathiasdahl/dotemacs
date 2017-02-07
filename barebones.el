@@ -28,14 +28,18 @@
                        (interactive)
                        (switch-to-buffer nil)))
 (global-set-key [f2] 'other-window)
-(global-set-key [f3] 'ibuffer)
+(global-set-key [f3] 'switch-to-buffer)
 (global-set-key [f5] (lambda ()
                        (interactive)
                        (if (and (buffer-modified-p)
                                 (not (eq 'dired-mode major-mode)))
                            (error "Buffer has unsaved changes")
                          (kill-buffer (current-buffer)))))
-(global-set-key [f9] 'toggle-truncate-lines)
+(global-set-key [f9]           'toggle-truncate-lines)
+
+;; Zoom in and out with the mouse
+(global-set-key [C-wheel-up]   'text-scale-increase)
+(global-set-key [C-wheel-down] 'text-scale-decrease)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -44,12 +48,4 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
-
-(require 'ibuffer)
-
-(defun ibuffer-stuff ()
-  (hl-line-mode 1)
-  (define-key ibuffer-mode-map (kbd "q") 'bury-buffer))
-
-(add-hook 'ibuffer-hook 'ibuffer-stuff)
 
