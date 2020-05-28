@@ -3,7 +3,7 @@ My .emacs files
 
 This repository contains some .emacs / init.el variants that I like to use.
 
-barbones.el
+barebones.el
 =========
 
 This version of my .emacs file contains the bare minimum that I need when I install Emacs on a new system the first time, to be used temporarily or as a basic start, to grow later.
