@@ -18,6 +18,13 @@ List of custom keys in this setup:
 
 The few custom keybindings might seem strange to people and there is no particular logic in them apart from being very short and quick to type. Apart from typing, modifying text, and saving, the f1, f2 and f3 keys cover a huge part of what I do in Emacs, that is: switch to the previous buffer (very common for me in different workflows), switch to other window and switch to some other buffer with completion. The last binding here, f3, on my full Emacs setup, has a very complicated configuration of the good old anything.el (yup, I haven't switched to Helm yet...) However, iswitchb-buffer (or other modern versions) is good enough for most scenarios. f5 to kill buffer (no questions asked if the buffer is saved) is also often handy, and f9 to toggle truncation of long lines is something I used a lot.
 
+I also use these more efficient window handling shortcuts since I seldom use C-N for universal argument:
+
+ - C-1 as an alternative to C-x 1
+ - C-2 as an alternative to C-x 2
+ - C-3 as an alternative to C-x 3
+ - C-0 as an alternative to C-x 0
+
 With these bindings (and all the non-custom bound commands in Emacs), I'm very productive. I also make heavy use of Dired whenever I can - such a wonderful tool (my favorite combination is to use `% g`, `t` and `k`, you should try it out some day. Type `g` if you get afraid and think your files were deleted (they were not).)
 
 Apart from the few custom keybindings above, I also have what I also think is the bare minimum set of settings/flags that makes Emacs work better than the default:
